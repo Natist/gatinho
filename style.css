@@ -1,0 +1,167 @@
+/*Título*/
+h1 {
+    text-align: center;
+}
+
+/*Cabeça*/
+.head {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    padding: 10% 6%;
+    padding-top: 0;
+    padding-bottom: 7%;
+    border-radius: 35% 35% 40% 40%;
+    border: 2px solid #333;
+    margin-top: 80px;
+    margin-left: 410px;
+    position: relative;
+}
+
+/*Olhos*/
+.eye-container {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.eye {
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+    display: block;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+/*Detalhes dos Olhos*/
+.eye-detail {
+    border-radius: 50%;
+    background: #fff;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 10px;
+    left: 12px;
+}
+
+.eye-detail.right {
+    top: 30%;
+    right: 10%;
+    left: auto;
+    width: 20%;
+    height: 20%;
+}
+
+.eye-detail.left {
+    top: auto;
+    left: 40%;
+    bottom: 10%;
+    width: 35%;
+    height: 35%;
+}
+
+/*Orelhas*/
+.ear-container {
+    display: flex;
+}
+
+.ear {
+    border-color: #000;
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-top-style: solid;
+    border-right-style: solid;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 20px;
+    z-index: -1;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/*Detalhes das Orelhas*/
+.ear.left {
+    left: 0;
+    transform: rotate(-90deg);
+}
+
+.ear.right {
+    right: 0;
+}
+
+.ear-detail {
+    background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+/*Nariz*/
+.nose {
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    margin-top: 8%;
+}
+
+.nose-detail {
+    border-bottom: 2px solid #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+}
+
+/*Boca*/
+.mouth-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -8%;
+}
+
+.mouth {
+    border-bottom: 2px solid transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+}
+
+/*Detalhes da Cabeça*/
+.head-detail-container {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    top: 0;
+}
+
+.head-detail {
+    background-color: #E4E4E1;
+    background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+ 	background-blend-mode: normal, multiply;
+    width: 20px;
+    height: 60px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/*Bigodes*/
+.nose::after {
+    content: "\269F";
+    font-size: 30px;
+    color: gray;
+}
+
+.nose::before {
+    content: "\269E";
+    font-size: 30px;
+    color: gray;
+}
